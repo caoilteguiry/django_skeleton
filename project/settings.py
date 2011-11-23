@@ -141,5 +141,10 @@ LOGGING = {
     }
 }
 
+LOGIN_URL = "/login"
+LOGIN_REDIRECT_URL = "/"
+
+
+
 from settings_local import *
 

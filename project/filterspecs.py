@@ -57,4 +57,4 @@ class ContainsFilterSpec(FilterSpec):
             yield {'selected': smart_unicode(val) == self.lookup_val,
                    'query_string': cl.get_query_string(
                                    {self.lookup_kwarg: val}),
-                   'display': val.upper()}
+                   'display': val}

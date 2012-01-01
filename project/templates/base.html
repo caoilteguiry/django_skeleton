@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
   {%block head %}    
-    <title>{% block title %}{% endblock %}</title>   
-    {% block css %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    {% block base_css %}{% endblock %}
+    {% block extra_css %}{% endblock %}
   {% endblock %}
   </head>  
   <body>
     {% block body %}{% endblock %}
   </body>
-  {% block javascript %}{% endblock %}
+  {% block base_js %}
+  <script type="text/javascript" src="/static/javascript/libs/jquery/jquery-1.7.1.min.js"></script>
+  {% endblock %}
+  {% block extra_js %}{% endblock %}
 </html>
